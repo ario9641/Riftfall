@@ -1,0 +1,27 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Fortnite Clone</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FIX: Use standard, globally bound Three.js distribution scripts -->
+    <script src="https://cloudflare.com"></script>
+    <script src="https://jsdelivr.net"></script>
+</head>
+
+<body>
+    <!-- Aiming Reticle -->
+    <div id="crosshair"></div>
+
+    <!-- UI Overlay Instructions -->
+    <div id="hud">
+        <h2>Mini-Fortnite Prototype</h2>
+        <p>Click screen to Lock Mouse & Play</p>
+        <p><strong>WASD</strong>: Move | <strong style="color: #ffcc00;">Left Click</strong>: Shoot Target</p>
+        <p><strong>E</strong>: Build Wall (Cost: 10 Wood) | <strong>Q</strong>: Build Floor (Cost: 10 Wood)</p>
+        <div id="stats">Wood: <span id="wood-count">100</span> | Score: <span id="score-count">0</span></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
